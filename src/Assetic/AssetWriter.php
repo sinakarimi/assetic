@@ -61,7 +61,7 @@ class AssetWriter
 
             static::write(
                 $this->dir.'/'.VarUtils::resolve(
-                    $asset->getTargetPath(),
+                    $asset->getSourcePath(),
                     $asset->getVars(),
                     $asset->getValues()
                 ),
